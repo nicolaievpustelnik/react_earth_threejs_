@@ -34,7 +34,7 @@ export function Earth(props) {
                 saturation={0}
                 fade={true}
             />
-            <mesh ref={cloudsRef} position={[0, 0, 3]}>
+            <mesh ref={cloudsRef} /*position={[0, 0, 3]}*/>
                 <sphereGeometry args={[1.005, 32, 32]} />
                 <meshPhongMaterial
                     map={cloudsMap}
@@ -44,7 +44,7 @@ export function Earth(props) {
                     side={THREE.DoubleSide}
                 />
             </mesh>
-            <mesh ref={earthRef} position={[0, 0, 3]}>
+            <mesh ref={earthRef} /*position={[0, 0, 3]}*/>
                 < sphereGeometry args={[1, 32, 32]} />
                 <meshPhongMaterial specularMap={specularMap} />
                 <meshStandardMaterial
